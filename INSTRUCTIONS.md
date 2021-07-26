@@ -1,5 +1,7 @@
 # Instructions
 
+## Setup
+
 1. Rename `.env.custom.example` to `.env`
 2. Update `APP_CODE_PATH_HOST` to source code location
 3. Update PHP version if 7.4 not needed `PHP_VERSION`
@@ -20,3 +22,17 @@
       4. Update hosts file
    2. ExpressionEngine install
       1. TODO
+
+
+## Commands
+
+Must be run from laradock folder
+
+### Start
+`docker compose up -d nginx mariadb phpmyadmin`
+
+### Stop
+`docker compose down`
+
+### Running Composer, NPM and Artisan
+`docker compose exec workspace bash`
