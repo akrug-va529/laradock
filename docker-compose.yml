@@ -892,6 +892,9 @@ services:
       build: ./phpmyadmin
       environment:
         - PMA_ARBITRARY=1
+        - PMA_HOSTS=${PMA_DB_ENGINE}
+        - PMA_USER=${PMA_USER}
+        - PMA_PASSWORD=${PMA_PASSWORD}
         - MYSQL_USER=${PMA_USER}
         - MYSQL_PASSWORD=${PMA_PASSWORD}
         - MYSQL_ROOT_PASSWORD=${PMA_ROOT_PASSWORD}
