@@ -23,6 +23,7 @@
       4. Update hosts file
    2. ExpressionEngine install
       1. TODO
+8. Add following folder to .gitignore `.data/`
 
 
 ## Commands
